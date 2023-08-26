@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class TimeManager : MonoBehaviour
 {
-    [SerializeField ] float SlowdownFactor = 0.05f;
-    [SerializeField]  float SlowDownLength = 2f;
+    [SerializeField ] float SlowdownFactor;
+    [SerializeField]  float SlowDownLength;
 
     void Update(){
         Time.timeScale += (1f / SlowDownLength ) * Time.unscaledDeltaTime;
