@@ -10,6 +10,7 @@ public class Driver : MonoBehaviour
     [SerializeField] float MaxSpeed = 15;
     [SerializeField] float Drag = 0.98f;
     [SerializeField] float SteerAngle = 20;
+    [SerializeField] float IncreasedSteerAngle;
     private Vector3 MoveForce;
     [SerializeField] float Traction;
     private float TractionSave;
@@ -55,9 +56,15 @@ public class Driver : MonoBehaviour
     //     //     MaxSpeed = MaxSpeedSave;
     //     }
         if (Input.GetKey(KeyCode.Space))
+        {
             timeManager.SlowMotion();
+            SteerAngle = IncreasedSteerAngle;
+        }
+        else 
+        {
+            SteerAngle = 20;
+        }
 
-        
         MoveForce += transform.up * MoveSpeed * Input.GetAxis("Vertical") * Time.deltaTime;
         transform.position  +=  MoveForce * Time.deltaTime;
 
