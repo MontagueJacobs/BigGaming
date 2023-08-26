@@ -35,6 +35,10 @@ public class Driver : MonoBehaviour
     {   
        move();
     }
+
+    public Vector3 getMoveForce() {
+        return MoveForce;
+    }
     
     void move ()
      {   
@@ -64,7 +68,6 @@ public class Driver : MonoBehaviour
         {
             SteerAngle = 20;
         }
-
         MoveForce += transform.up * MoveSpeed * Input.GetAxis("Vertical") * Time.deltaTime;
         transform.position  +=  MoveForce * Time.deltaTime;
 
