@@ -16,7 +16,9 @@ public class Driver : MonoBehaviour
     private float TractionSave;
     private float DragSave;
     private float MaxSpeedSave;
-
+    
+    int MoveDir;
+    
     [Header("Break on")]
     [SerializeField] float BreakTraction;
     [SerializeField] float BreakDrag;
@@ -25,6 +27,7 @@ public class Driver : MonoBehaviour
     void Start()
 
     {
+        MoveDir = 1;
         TractionSave = Traction;
         DragSave = Drag;
         MaxSpeedSave = MaxSpeed;
@@ -64,8 +67,18 @@ public class Driver : MonoBehaviour
         {
             SteerAngle = 20;
         }
+        
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            MoveDir = 1;
+        }   
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            MoveDir = -1;
+        }
+        
 
-        MoveForce += transform.up * MoveSpeed * Input.GetAxis("Vertical") * Time.deltaTime;
+        MoveForce += transform.up * MoveSpeed * MoveDir * Time.deltaTime;
         transform.position  +=  MoveForce * Time.deltaTime;
 
         float SteerInput = Input.GetAxis("Horizontal");
