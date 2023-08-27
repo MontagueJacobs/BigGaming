@@ -11,7 +11,7 @@ public class Driver : MonoBehaviour
     [SerializeField] float Drag = 0.98f;
     [SerializeField] float SteerAngle = 20;
     [SerializeField] float IncreasedSteerAngle;
-    private Vector3 MoveForce;
+    [SerializeField] Vector3 MoveForce;
     [SerializeField] float Traction;
     private float TractionSave;
     private float DragSave;
@@ -19,10 +19,9 @@ public class Driver : MonoBehaviour
     
     int MoveDir;
     
-    [Header("Break on")]
-    [SerializeField] float BreakTraction;
-    [SerializeField] float BreakDrag;
+    [Header("Slow Time")]
     public TimeManager timeManager;
+  
     // Start is called before the first frame update
     void Start()
 
@@ -77,11 +76,12 @@ public class Driver : MonoBehaviour
             MoveDir = -1;
         }
         
-
+       // Debug.Log(MoveForce.magnitude);
         MoveForce += transform.up * MoveSpeed * MoveDir * Time.deltaTime;
         transform.position  +=  MoveForce * Time.deltaTime;
 
         float SteerInput = Input.GetAxis("Horizontal");
+       
        transform.Rotate(-Vector3.forward * SteerInput * MoveForce.magnitude * SteerAngle * Time.deltaTime);
         
         MoveForce *= Drag;

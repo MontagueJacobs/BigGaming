@@ -5,7 +5,7 @@ using UnityEngine;
 public class Delivery : MonoBehaviour
 {
  
-   bool hasPackage = false;
+   [SerializeField] public bool hasPackage = false;
    [SerializeField] float delay = 0.5f;
 
    void Start()
