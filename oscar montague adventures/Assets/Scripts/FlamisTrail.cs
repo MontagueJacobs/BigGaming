@@ -5,7 +5,8 @@ using UnityEngine;
 public class FlamisTrail : MonoBehaviour
 {
     [SerializeField] ParticleSystem carParticles;
-    [SerializeField] float startParticleTime = 10f;
+    [SerializeField] ParticleSystem carParticles2;
+    [SerializeField] float startParticleTime = 8f;
     Driver car;
 
 
@@ -19,9 +20,16 @@ public class FlamisTrail : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (car.getMoveForce().magnitude > startParticleTime) 
+        if (car.getMoveForce().magnitude < startParticleTime)
+        {
             carParticles.Play();
+            carParticles2.Play();
+        }
+
         else 
-            carParticles.Stop(); 
+        { 
+            carParticles.Stop();
+            carParticles2.Stop();
+        }
     }
 }
