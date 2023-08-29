@@ -40,23 +40,7 @@ public class Driver : MonoBehaviour
     
     void move ()
      {   
-    //     if (Input.GetKey(KeyCode.Space))
-    //     {    
-    //         Debug.Log("sds");
-    //         Traction = BreakTraction;
-    //         Drag = BreakDrag;  
-    //         if (MaxSpeed >= 0)
-    //             MaxSpeed-= 0.1f;
-    //         else MaxSpeed =0;
-    //         Debug.Log(Traction);
-    //         Debug.Log(Drag);
-    //     }
-    //     else
-    //     {
-    //     //     Traction = TractionSave;
-    //     //     Drag = DragSave;
-    //     //     MaxSpeed = MaxSpeedSave;
-    //     }
+    
         if (Input.GetKey(KeyCode.Space))
         {
             timeManager.SlowMotion();
