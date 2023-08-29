@@ -24,7 +24,7 @@ public class Delivery : MonoBehaviour
        hasPackage = true;
        Debug.Log("Package picked up!");
      
-       Destroy(other.gameObject,delay); 
+     //  Destroy(other.gameObject,delay); 
     }
     if(other.tag == "DeliveryLoc" && hasPackage){
       hasPackage = false;
