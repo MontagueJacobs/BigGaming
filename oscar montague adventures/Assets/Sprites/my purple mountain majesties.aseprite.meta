@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2c475b72eb7e7b94c9c38ed534acf702
+guid: f949cb9b94ae0934e9b8d40e4ac2b141
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638286881762972127
+  platformSettingsDirtyTick: 638287662640355331
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Sprite-0006
+  - name: my purple mountain majesties
     originalName: 
-    pivot: {x: 0.85294116, y: 0.01724138}
+    pivot: {x: 0.48148152, y: 0.021276597}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 34
-      height: 58
-    spriteID: f88cded3bc7bc3c4998e004a08b4048b
+      width: 54
+      height: 47
+    spriteID: 4bbd60d421e8b9f4b92d0eb201aa5168
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,18 +140,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
   spriteSheetImportData:
-  - name: Sprite-0006_0
+  - name: my purple mountain majesties_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.37010348, y: 0.8346037}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 49
-      width: 30
-      height: 13
-    spriteID: 88c4bee54f235874aa2cdcf4d3372579
+      y: 17
+      width: 13
+      height: 30
+    spriteID: 2dc0b4ebf61605345a8e786b8024172d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,18 +160,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: Sprite-0006_1
+  - name: my purple mountain majesties_1
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.48827314, y: 0.8408581}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 29
-      width: 30
-      height: 16
-    spriteID: d419829abd9d15a4b90574804201cfae
+      x: 21
+      y: 17
+      width: 16
+      height: 30
+    spriteID: 15d970b89b6c0e54ea19c2404fec1e87
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -180,18 +180,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: Sprite-0006_2
+  - name: my purple mountain majesties_2
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.48241043, y: 0.86421967}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 8
-      width: 34
-      height: 16
-    spriteID: 9c5c032aa6d5cd04ba6d938fe8c4956e
+      x: 42
+      y: 17
+      width: 16
+      height: 34
+    spriteID: ebb4884fd7b56f04387fd647cc03117a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -202,20 +202,20 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: -572921608
-    name: Sprite-0006
+    guid: -537108470
+    name: my purple mountain majesties
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Sprite-0006
+    - name: my purple mountain majesties
       frameIndex: 0
       cellRect:
-        x: 1
+        x: 4
         y: -1
-        width: 34
-        height: 58
-      spriteId: f88cded3bc7bc3c4998e004a08b4048b
+        width: 54
+        height: 47
+      spriteId: 4bbd60d421e8b9f4b92d0eb201aa5168
     linkedCells: []
     parentIndex: -1
   platformSettings:

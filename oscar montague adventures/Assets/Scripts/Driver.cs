@@ -37,6 +37,10 @@ public class Driver : MonoBehaviour
     {   
        move();
     }
+
+    public Vector3 getMoveForce() {
+        return MoveForce;
+    }
     
     void move ()
      {   
