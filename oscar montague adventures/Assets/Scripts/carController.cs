@@ -20,7 +20,7 @@ public class carController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        carRigidBody2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -48,7 +48,10 @@ public class carController : MonoBehaviour
         //Limit so we cannot go faster than 50% of the max speed in the "reverse direction"
         if (velocityVsUp < maxSpeed * 0.5f && accelerationInput < 0)
             return;
-       
+
+        if (carRigidBody2D.velocity.magnitude > maxSpeed * maxSpeed && accelerationInput > 0)
+            return;
+
         //Apply Drag if there is no acceleration
         if (accelerationInput == 0)
         {
